@@ -5,8 +5,8 @@ const appHeight = (function () {
             doc.style.setProperty('--app-height', `${window.innerHeight}px`)
       }
       const init = ()=>{
-            window.addEventListener('resize', appHeight)
-            appHeight()
+            window.addEventListener('resize', setAppHeight)
+            setAppHeight()
       }
       return {init}
 })()
